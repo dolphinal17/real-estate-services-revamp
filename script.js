@@ -31,3 +31,17 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove('scrolled');
     }
 });
+
+
+// modal 
+function openModal() {
+    document.getElementById('popup').style.display = 'block';
+  }
+
+  // Close the modal when clicking outside of it or on close button
+  window.onclick = function(event) {
+    var modal = document.getElementById('popup');
+    if (event.target == modal || event.target.closest(".popup-close") || event.target.closest("#closemodal")) {
+      modal.style.display = "none";
+    }
+  }

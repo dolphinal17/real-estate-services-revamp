@@ -39,7 +39,7 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 <h2 class="or">OR</h2>
-                <button class="appointment-box">
+                <button class="appointment-box" onclick="openModal()">
                     <h2>BOOK AN APPOINTMENT</h2>
                 </button>
             </div>
@@ -339,7 +339,7 @@
     <div class="work-wrapper">
         <h2>Work With Us</h2>
         <p>With decades of experience in luxurious Tri Valley real estate, our team is here to ensure that your dreams are a reality. Let us guide you through your home buying journey, contact us today!</p>
-        <button class="button-86">Contact Us</button>
+        <button class="button-86" onclick="openModal()">Contact Us</button>
     </div>
     <!-- end of work -->
 
@@ -387,7 +387,29 @@
     </div>
     <!-- end of footer -->
 
-    
+
+    <!-- modal -->
+    <div class="popup" id="popup">
+        <div class="popup-inner">
+            <div class="popup-text">
+                <h1>Submit A Message</h1>
+                <form action="#">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Phone">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Message">
+                    <div class="check-wrap">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">
+                        By providing Julie Hansen Partnership your contact information, you acknowledge and agree to our Privacy Policy and consent to receiving marketing communications, including through automated calls, texts, and emails, some of which may use artificial or prerecorded voices. This consent isn't necessary for purchasing any products or services and you may opt out at any time. To opt out from texts, you can reply, stop at any time. To opt out from emails, you can click on the unsubscribe link in the emails. Message and data rates may apply.</label>
+                    </div>
+                    <button class="button-86" id="closemodal" href="index.html">Send</button>
+                </form>
+          </div>
+          <a class="popup-close" href="#"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+      </div>
+    <!-- end of modal -->
 
     <script src="script.js"></script>
 </body>
